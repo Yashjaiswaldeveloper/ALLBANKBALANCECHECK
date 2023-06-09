@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/otp"
+    tools:context=".OTPActivity">
+    <ImageView
+        android:id="@+id/otp_frm"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="280dp"
+        android:background="@drawable/otpfrm" />
+
+    <TextView
+        android:id="@+id/get_code_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter code sent to"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/get_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:layout_below="@+id/get_code_txt"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/get_code"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/otp_btn1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/otpbtn1"
+            android:imeOptions="actionNext"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:maxLength="1"
+            android:inputType="number"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/otp_btn2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:maxLength="1"
+            android:inputType="number"
+            android:background="@drawable/otpbtn1"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/otp_btn3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:imeOptions="actionNext"
+            android:maxLength="1"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:background="@drawable/otpbtn1"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/otp_btn4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:background="@drawable/otpbtn1"
+            android:scaleType="fitXY" />
+        <EditText
+            android:id="@+id/otp_btn5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:imeOptions="actionNext"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:background="@drawable/otpbtn1"
+            android:scaleType="fitXY" />
+        <EditText
+            android:id="@+id/otp_btn6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:background="@drawable/otpbtn1"
+            android:scaleType="fitXY" />
+
+
+    </LinearLayout>
+    <!--<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">-->
+
+    <ImageView
+        android:id="@+id/verifycontbtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/verifycont" />
+
+    <!--<ProgressBar
+        android:id="@+id/progressbar_sending_otp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>-->
+    <!--    </FrameLayout>-->
+
+
+    <ImageView
+        android:id="@+id/resend"
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/resend" />
+</RelativeLayout>

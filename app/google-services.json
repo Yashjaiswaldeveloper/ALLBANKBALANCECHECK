@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "288839113911",
+    "project_id": "all-bank-balance-check-6c946",
+    "storage_bucket": "all-bank-balance-check-6c946.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288839113911:android:2abcfbed6fd3e4ab42c132",
+        "android_client_info": {
+          "package_name": "com.allbank.balancecheck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288839113911-7g9ie6p21jp5lchggiasm04jrqbgkcse.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.allbank.balancecheck",
+            "certificate_hash": "f439e5aab77c3333c5e03277b02539f76e60a025"
+          }
+        },
+        {
+          "client_id": "288839113911-k006ape49b0fi6dkikbnolk2qbb1gpb0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkQdGVQSRvGiMdSr1uURuJBry357tTjXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "288839113911-k006ape49b0fi6dkikbnolk2qbb1gpb0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/email"
+    tools:context=".EmailActivity">
+
+    <ImageView
+        android:id="@+id/emailfrm"
+        android:layout_width="wrap_content"
+        android:layout_height="330dp"
+        android:background="@drawable/emailfrm"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:layout_marginTop="198dp"
+        android:layout_marginLeft="78dp"/>
+
+    <EditText
+        android:id="@+id/email_edit_txt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginRight="75dp"
+        android:textAlignment="center"
+        android:background="@drawable/countrybtn"
+        android:textSize="13dp" />
+
+
+    <ImageView
+        android:id="@+id/continuebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/continuebtn" />
+
+
+</RelativeLayout>

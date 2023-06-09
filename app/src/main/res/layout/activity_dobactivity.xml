@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dob"
+    tools:context=".DOBActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <ImageView
+            android:id="@+id/cityfrm"
+            android:layout_width="wrap_content"
+            android:layout_height="330dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/cityfrm" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of birth"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="77dp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginRight="40dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <Spinner
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="-5dp"
+            android:layout_weight="1.1"
+            android:background="@drawable/dobbtn1" />
+
+        <Spinner
+            android:id="@+id/month"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.1"
+            android:background="@drawable/dobbtn2png" />
+
+        <Spinner
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="35dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/dobbtn3" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dobcontinuebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="275dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/continuebtn" />
+
+</RelativeLayout>

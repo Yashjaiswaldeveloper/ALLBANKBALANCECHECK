@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ExchangeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbare"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/toolbg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp">
+
+            <ImageView
+                android:id="@+id/backbt"
+                android:layout_width="29dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="38dp"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/Exchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="40dp"
+                android:text="Exchange"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbare">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="325dp"
+                android:layout_height="52dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textbox_one"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:id="@+id/switchimg"
+                android:layout_width="73dp"
+                android:layout_height="16dp"
+                android:layout_below="@+id/spinner"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/switchbt" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="325dp"
+                android:layout_height="52dp"
+                android:layout_below="@+id/spinner"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/textbox_one"
+                android:spinnerMode="dropdown" />
+
+            <LinearLayout
+                android:id="@+id/linearlay"
+                android:layout_width="315dp"
+                android:layout_height="156dp"
+                android:layout_below="@id/spinner3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/edittextone"
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Enter Amt"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:paddingTop="10dp"
+                        android:text="Rupee"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/result"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing=".1"
+                        android:text="Result"
+                        android:textColor="#9E9F9F"
+                        android:textSize="30sp" />
+                </LinearLayout>
+                <!--                <TextView-->
+                <!--                    android:id="@+id/tv2"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:letterSpacing="0.05"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:text="Result"-->
+                <!--                    android:textColor="#9E9F9F"-->
+                <!--                    android:textSize="20sp" />-->
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/convertbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearlay"
+                android:layout_centerHorizontal="true"
+                android:text="Convert" />
+
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/ad_banner"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" />
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/country"
+    tools:context=".CountryActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="330dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/countryfrm" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select a country"
+            android:textStyle="normal"
+            android:textSize="10sp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="50dp"/>
+
+
+        <Spinner
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/countrybtn" />
+
+
+        <ImageButton
+            android:id="@+id/countrycontinuebtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/continuebtn" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/native_ads"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
